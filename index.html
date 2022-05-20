@@ -8,11 +8,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
+  <div class="popup _hidden">
+    <div class="popup-box">
+      <button class="popup-close-btn" type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <h2 class="popup-title">ваш фидбек</h2>
+      <form class="popup-form" action="#">
+        <div class="popup-form-row">
+          <label class="form-label">
+            <span class="popup-form-hint">Как часто вы заходите на сайт?</span>
+            <select class="select">
+              <option selected>Почти каждый день</option>
+              <option>Раз в несколько дней</option>
+              <option>Раз в несколько недель</option>
+              <option>Несколько раз в год</option>
+            </select>
+          </label>
+        </div>
+        <div class="popup-form-row">
+          <span class="popup-form-hint">Вы подписаны на e-mail рассылку?</span>
+          <div class="popup-form-choice">
+            <label class="radio-group">
+              <input type="radio" name="radio-group" class="radio visually-hidden">
+              <span class="radio-group-text">Да</span>
+            </label>
+            <label class="radio-group">
+              <input type="radio" name="radio-group" class="radio visually-hidden">
+              <span class="radio-group-text">Нет</span>
+            </label>
+          </div>
+        </div>
+        <div class="popup-form-row">
+          <label class="form-label">
+            <span class="popup-form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="textarea" placeholder="Может, больше рецептов?"></textarea>                  
+          </label>
+        </div>
+        <div class="popup-form-row">
+          <button class="popup-btn" type="submit">отправить</button>
+        </div>
+      </form>    
+    </div>
+  </div>
   <header class="header">
     <div class="header-content">
       <div class="logo-nav">
         <a href="#0"><img class="header-logo" src="svg/noemi-logo.svg" alt="логотип"></a>
         <nav class="nav">
+          <button type="button" class="nav-btn">
+            <span class="nav-btn-form">открыть меню</span>
+          </button>
           <ul class="nav-items">
             <li class="nav-item"><a href="#0" class="link">главная</a></li>
             <li class="nav-item"><a href="#0" class="link">посты</a></li>
@@ -20,7 +66,7 @@
             <li class="nav-item"><a href="#0" class="link">теги</a></li>
             <li class="nav-item"><a href="#0" class="link">темы</a></li>
             <li class="nav-item"><a href="#0" class="link">контакты</a></li>
-          </ul>
+          </ul>          
         </nav>
       </div>
       <div class="title">
@@ -283,7 +329,7 @@
           <source media="(min-width: 1200px)" srcset="images\shop-item-desk1.jpg">
           <img src="images\shop-item-desk1.jpg" alt="подушки на диван" width="100%">        
         </picture>
-        <div class="card-content">
+        <div class="card-content">          
           <h3 class="card-title">подушки на диван</h3>
           <p class="card-description">Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="card-link">здесь</a>.</p>
           <div class="order">
@@ -310,7 +356,7 @@
         </picture>
         <div class="card-content">
           <h3 class="card-title">кукла "зайчик"</h3>
-          <p class="card-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена<a href="#0" class="card-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+          <p class="card-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0" class="card-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
           <div class="order">
             <div class="price only-new-price">
               <div class="new-price">
